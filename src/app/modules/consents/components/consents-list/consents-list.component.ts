@@ -1,6 +1,6 @@
 import {Component, Input, OnChanges, SimpleChanges, ViewChild} from '@angular/core';
-import {MatPaginator, MatTableDataSource} from "@angular/material";
-import {Consent} from "../../data/schema/consent";
+import {MatPaginator, MatTableDataSource} from '@angular/material';
+import {Consent} from '../../data/schema/consent';
 
 @Component({
   selector: 'app-consents-list',

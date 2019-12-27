@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Consent} from "../../data/schema/consent";
-import {ConsentsService} from "../../data/services/consents.service";
-import {Observable} from "rxjs";
+import {Consent} from '../../data/schema/consent';
+import {ConsentsService} from '../../data/services/consents.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-consents',
@@ -11,7 +11,7 @@ import {Observable} from "rxjs";
 export class ConsentsComponent implements OnInit {
   consents$: Observable<Consent[]>;
 
-  constructor(private consentsService: ConsentsService){}
+  constructor(private consentsService: ConsentsService) {}
 
   ngOnInit(): void {
     this.consents$ = this.consentsService.getConsents();

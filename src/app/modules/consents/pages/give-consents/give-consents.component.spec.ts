@@ -1,14 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GiveConsentsComponent } from './give-consents.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MaterialModule} from "../../../../shared/material.module";
-import {AddConsentComponent} from "../../components/add-consent/add-consent.component";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {ConsentsService} from "../../data/services/consents.service";
-import {Consent} from "../../data/schema/consent";
-import {Router, RouterModule} from "@angular/router";
-import {of} from "rxjs";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModule} from '../../../../shared/material.module';
+import {AddConsentComponent} from '../../components/add-consent/add-consent.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ConsentsService} from '../../data/services/consents.service';
+import {Consent} from '../../data/schema/consent';
+import {Router, RouterModule} from '@angular/router';
+import {of} from 'rxjs';
 
 describe('GiveConsentsComponent', () => {
   let component: GiveConsentsComponent;

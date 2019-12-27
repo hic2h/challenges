@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {ConsentsService} from "../../data/services/consents.service";
-import {Router} from "@angular/router";
+import {ConsentsService} from '../../data/services/consents.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-give-consents',
@@ -14,8 +14,8 @@ export class GiveConsentsComponent {
   onAddConsent(consent) {
     this.consentsService.addConsent(consent).subscribe(
       () => this.router.navigate(['/consents']),
-      () => {} //TODO: handle http errors
-    )
+      () => {} // TODO: handle http errors
+    );
   }
 
 }

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 import { map } from 'rxjs/operators';
-import {Consent} from "../schema/consent";
-import {environment} from "../../../../../environments/environment";
+import {Consent} from '../schema/consent';
+import {environment} from '../../../../../environments/environment';
 
 const routes = {
   consents: `${environment.baseUrl}/consents`,
@@ -12,7 +12,7 @@ const routes = {
 interface ConsentsResponse {
   page: number;
   count: number;
-  records: Consent[]
+  records: Consent[];
 }
 
 @Injectable({

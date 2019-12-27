@@ -1,10 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddConsentComponent } from './add-consent.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MaterialModule} from "../../../../shared/material.module";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MatCheckbox, MatCheckboxChange} from "@angular/material";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MaterialModule} from '../../../../shared/material.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatCheckbox, MatCheckboxChange} from '@angular/material';
 
 describe('AddConsentComponent', () => {
   let component: AddConsentComponent;

@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import {MatCheckboxChange} from "@angular/material";
-import {Consent} from "../../data/schema/consent";
+import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {MatCheckboxChange} from '@angular/material';
+import {Consent} from '../../data/schema/consent';
 
 @Component({
   selector: 'app-add-consent',
@@ -13,9 +13,9 @@ export class AddConsentComponent implements OnInit {
   @Output() addConsent: EventEmitter<Consent> = new EventEmitter();
   addConsentForm: FormGroup;
   givenConsentsData = [
-    "Receive newsletter",
-    "Be shown targeted Ads",
-    "Contribute to anonymous visit statistics"
+    'Receive newsletter',
+    'Be shown targeted Ads',
+    'Contribute to anonymous visit statistics'
   ];
   submitting = false;
   constructor(public fb: FormBuilder) { }
@@ -34,9 +34,9 @@ export class AddConsentComponent implements OnInit {
     if (e.checked) {
       givenConsents.push(new FormControl(e.source.value));
     } else {
-      let i: number = 0;
+      let i = 0;
       givenConsents.controls.forEach((item: FormControl) => {
-        if (item.value == e.source.value) {
+        if (item.value === e.source.value) {
           givenConsents.removeAt(i);
           return;
         }

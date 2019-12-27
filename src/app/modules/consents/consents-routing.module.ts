@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from "@angular/router";
-import {GiveConsentsComponent} from "./pages/give-consents/give-consents.component";
-import {ConsentsComponent} from "./pages/consents/consents.component";
+import {RouterModule, Routes} from '@angular/router';
+import {GiveConsentsComponent} from './pages/give-consents/give-consents.component';
+import {ConsentsComponent} from './pages/consents/consents.component';
 
 const routes: Routes = [
   {
