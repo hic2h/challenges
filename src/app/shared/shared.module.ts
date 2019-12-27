@@ -6,6 +6,7 @@ import {ContentLayoutComponent} from "../layout/content-layout/content-layout.co
 import {RouterModule} from "@angular/router";
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule,
     MaterialModule
   ],

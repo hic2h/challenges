@@ -1,0 +1,11 @@
+{
+  "consents": [
+    {"name": "user 1", "email": "emai1l@didomi.io", "givenConsents": ["Receive newsletter"]},
+    {"name": "user 2", "email": "emai1l@didomi.io", "givenConsents": ["Be shown targeted Ads"]},
+    {"name": "user 3", "email": "emai1l@didomi.io", "givenConsents": ["Receive newsletter", "Contribute to anonymous visit statistics"]},
+    {"name": "user 4", "email": "emai1l@didomi.io", "givenConsents": ["Receive newsletter"]},
+    {"name": "user 5", "email": "emai1l@didomi.io", "givenConsents": ["Receive newsletter", "Be shown targeted Ads"]},
+    {"name": "user 6", "email": "emai1l@didomi.io", "givenConsents": ["Receive newsletter", "Be shown targeted Ads", "Contribute to anonymous visit statistics"]},
+    {"name": "user 7", "email": "emai1l@didomi.io", "givenConsents": []}
+  ]
+}
