@@ -9,6 +9,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 
+/**
+ * The shared module contains classes and resources which are used in more than
+ * one dynamically loaded module.
+ * Now it imports the used material modules, the form and reactive form and the layout components
+ */
 @NgModule({
   declarations: [
     SideNavComponent,

@@ -21,6 +21,9 @@ interface ConsentsResponse {
 export class ConsentsService {
   constructor(private http: HttpClient) { }
 
+  /**
+   * Fetch the consents from the backend by page and limit
+   */
   public getConsents(page = 0, limit = 10): Observable<Consent[]> {
     return this.http.get<ConsentsResponse>(`${routes.consents}?_page=${page}&_limit=${limit}`)
       .pipe(
@@ -28,6 +31,9 @@ export class ConsentsService {
       );
   }
 
+  /**
+   * Persist a new consent in the backend
+   */
   public addConsent(consent: Consent): Observable<Consent> {
     return this.http.post<Consent>(routes.consents, consent);
   }

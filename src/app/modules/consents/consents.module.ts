@@ -8,6 +8,9 @@ import { ConsentsListComponent } from './components/consents-list/consents-list.
 import { AddConsentComponent } from './components/add-consent/add-consent.component';
 import {ReactiveFormsModule} from '@angular/forms';
 
+/**
+ * This is a feature module responsible for managing consents
+ */
 @NgModule({
   declarations: [
     GiveConsentsComponent,

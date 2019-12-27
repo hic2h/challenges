@@ -3,6 +3,10 @@ import {Consent} from '../../data/schema/consent';
 import {ConsentsService} from '../../data/services/consents.service';
 import {Observable} from 'rxjs';
 
+/**
+ * This is a container component that fetches consents from the service
+ * and deliver it to the consentsList component
+ */
 @Component({
   selector: 'app-consents',
   templateUrl: './consents.component.html',

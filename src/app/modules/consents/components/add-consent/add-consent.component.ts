@@ -3,6 +3,10 @@ import {FormArray, FormBuilder, FormControl, FormGroup, Validators} from '@angul
 import {MatCheckboxChange} from '@angular/material';
 import {Consent} from '../../data/schema/consent';
 
+/**
+ * This is a presentation (dump) component responsible for displaying
+ * the add consent form and manages the validations
+ */
 @Component({
   selector: 'app-add-consent',
   templateUrl: './add-consent.component.html',
@@ -20,6 +24,9 @@ export class AddConsentComponent implements OnInit {
   submitting = false;
   constructor(public fb: FormBuilder) { }
 
+  /**
+   * Initialize the form group when the component is loaded
+   */
   ngOnInit() {
     this.addConsentForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2)]],
@@ -28,6 +35,9 @@ export class AddConsentComponent implements OnInit {
     });
   }
 
+  /**
+   * Every time a checkbox is checked or unchecked, either add or delete it from the array
+   */
   onCheckboxChange(e: MatCheckboxChange) {
     const givenConsents: FormArray = this.addConsentForm.get('givenConsents') as FormArray;
 
@@ -45,6 +55,10 @@ export class AddConsentComponent implements OnInit {
     }
   }
 
+  /**
+   * When clicking submit, set submitting to true to disable the button
+   * and notify the parent component by emitting the addConsent event
+   */
   submitForm() {
     this.submitting = true;
     this.addConsent.emit(this.addConsentForm.value as Consent);
