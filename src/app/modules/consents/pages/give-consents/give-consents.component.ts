@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {ConsentsService} from "../../data/services/consents.service";
 import {Router} from "@angular/router";
 
