@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import { map } from 'rxjs/operators';
 import {Consent} from '../schema/consent';
-import {environment} from '../../../../../environments/environment';
+import {HttpService} from '../../../../core/http.service';
 
 const routes = {
-  consents: `${environment.baseUrl}/consents`,
+  consents: '/consents',
 };
 
 interface ConsentsResponse {
@@ -19,13 +18,13 @@ interface ConsentsResponse {
   providedIn: 'root'
 })
 export class ConsentsService {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpService) { }
 
   /**
    * Fetch the consents from the backend by page and limit
    */
   public getConsents(page = 0, limit = 10): Observable<Consent[]> {
-    return this.http.get<ConsentsResponse>(`${routes.consents}?_page=${page}&_limit=${limit}`)
+    return this.http.get(routes.consents, page, limit)
       .pipe(
         map(result => result.records)
       );

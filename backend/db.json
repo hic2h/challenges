@@ -1,85 +1,98 @@
 {
-  "consents": {
-    "page": 0,
-    "count": 10,
-    "records": [
-  {
-    "id": 1,
-    "name": "user 1",
-    "email": "emai1l@didomi.io",
-    "givenConsents": [
-      "Receive newsletter"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "user 2",
-    "email": "emai1l@didomi.io",
-    "givenConsents": [
-      "Be shown targeted Ads"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "user 3",
-    "email": "emai1l@didomi.io",
-    "givenConsents": [
-      "Receive newsletter",
-      "Contribute to anonymous visit statistics"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "user 4",
-    "email": "emai1l@didomi.io",
-    "givenConsents": [
-      "Receive newsletter"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "user 5",
-    "email": "emai1l@didomi.io",
-    "givenConsents": [
-      "Receive newsletter",
-      "Be shown targeted Ads"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "user 6",
-    "email": "emai1l@didomi.io",
-    "givenConsents": [
-      "Receive newsletter",
-      "Be shown targeted Ads",
-      "Contribute to anonymous visit statistics"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "user 7",
-    "email": "emai1l@didomi.io",
-    "givenConsents": []
-  },
-  {
-    "name": "HICHAM",
-    "email": "hicham@i.com",
-    "givenConsents": [
-      "Receive newsletter",
-      "Be shown targeted Ads"
-    ],
-    "id": 8
-  },
-  {
-    "name": "Test 1",
-    "email": "test@i.com",
-    "givenConsents": [
-      "Receive newsletter",
-      "Be shown targeted Ads",
-      "Contribute to anonymous visit statistics"
-    ],
-    "id": 9
-  }
-]
-  }
+  "consents": [
+    {
+      "id": 1,
+      "name": "user 1",
+      "email": "emai1l@didomi.io",
+      "givenConsents": [
+        "Receive newsletter"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "user 2",
+      "email": "emai1l@didomi.io",
+      "givenConsents": [
+        "Be shown targeted Ads"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "user 3",
+      "email": "emai1l@didomi.io",
+      "givenConsents": [
+        "Receive newsletter",
+        "Contribute to anonymous visit statistics"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "user 4",
+      "email": "emai1l@didomi.io",
+      "givenConsents": [
+        "Receive newsletter"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "user 5",
+      "email": "emai1l@didomi.io",
+      "givenConsents": [
+        "Receive newsletter",
+        "Be shown targeted Ads"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "user 6",
+      "email": "emai1l@didomi.io",
+      "givenConsents": [
+        "Receive newsletter",
+        "Be shown targeted Ads",
+        "Contribute to anonymous visit statistics"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "user 7",
+      "email": "emai1l@didomi.io",
+      "givenConsents": []
+    },
+    {
+      "name": "HICHAM",
+      "email": "hicham@i.com",
+      "givenConsents": [
+        "Receive newsletter",
+        "Be shown targeted Ads"
+      ],
+      "id": 8
+    },
+    {
+      "name": "Test 1",
+      "email": "test@i.com",
+      "givenConsents": [
+        "Receive newsletter",
+        "Be shown targeted Ads",
+        "Contribute to anonymous visit statistics"
+      ],
+      "id": 9
+    },
+    {
+      "name": "Hicham",
+      "email": "h@2.com",
+      "givenConsents": [
+        "Receive newsletter",
+        "Be shown targeted Ads"
+      ],
+      "id": 11
+    },
+    {
+      "name": "Hicham 3",
+      "email": "h3@h.com",
+      "givenConsents": [
+        "Receive newsletter"
+      ],
+      "id": 12
+    }
+  ]
 }
