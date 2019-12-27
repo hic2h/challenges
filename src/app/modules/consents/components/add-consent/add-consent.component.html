@@ -1,0 +1,32 @@
+<form class="add-consents" [formGroup]="addConsentForm" (ngSubmit)="submitForm()" novalidate>
+  <div class="rows">
+    <mat-form-field>
+      <input matInput placeholder="Name" formControlName="name" autocomplete="off">
+      <mat-error *ngIf="addConsentForm.controls['name'].hasError('required')">Name is required</mat-error>
+      <mat-error *ngIf="addConsentForm.controls['name'].hasError('minlength')">Name must contain at least two characters.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email Address" formControlName="email" autocomplete="off">
+      <mat-error *ngIf="addConsentForm.controls['email'].hasError('required')">Email Address is required</mat-error>
+      <mat-error *ngIf="addConsentForm.controls['email'].hasError('email')">Invalid Email Address.</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="rows">
+    <label>I agree to: </label>
+  </div>
+  <div class="rows">
+    <section class="consents-section">
+      <mat-checkbox
+        class="consents-checkbox-button"
+        *ngFor="let givenConsent of givenConsentsData; let i = index"
+        [value]="givenConsent"
+        (change)="onCheckboxChange($event)">{{givenConsent}}</mat-checkbox>
+    </section>
+  </div>
+  <div class="rows">
+    <button mat-flat-button color="primary" [disabled]="addConsentForm.invalid || submitting">
+      <span *ngIf="!submitting">Give Consent</span>
+      <span *ngIf="submitting">Adding consent ...</span>
+    </button>
+  </div>
+</form>

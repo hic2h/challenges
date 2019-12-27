@@ -1,3 +1,17 @@
 mat-sidenav-content {
   height: 100vh;
 }
+
+mat-sidenav {
+  background-color: rgba(220,220,220, 0.4);
+
+  mat-nav-list {
+    .active {
+      background-color: lightblue;
+    }
+
+    a:focus {
+      background-color: lightblue;
+    }
+  }
+}

@@ -1,25 +1,3 @@
 <mat-card class="center">
-  <form class="give-consents">
-    <div class="rows">
-      <mat-form-field>
-        <input matInput placeholder="Name">
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Email Address">
-      </mat-form-field>
-    </div>
-    <div class="rows">
-      <label>I agree to: </label>
-    </div>
-    <div class="rows">
-      <section class="consents-section">
-        <mat-checkbox class="consents-checkbox-button">Receive newsletter</mat-checkbox>
-        <mat-checkbox class="consents-checkbox-button">Be shown targeted Ads</mat-checkbox>
-        <mat-checkbox class="consents-checkbox-button">Contribute to anonymous visit statistics</mat-checkbox>
-      </section>
-    </div>
-    <div class="rows">
-      <button mat-flat-button color="primary">Give Consent</button>
-    </div>
-  </form>
+  <app-add-consent (addConsent)="onAddConsent($event)"></app-add-consent>
 </mat-card>
