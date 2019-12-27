@@ -1,27 +1,32 @@
-# DidomiChallenge
+# Didomi Challenge
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+## Files and folders structure
+
+- `backend/` - contains a json file to mock the Http requests
+- `src/` - main application folder, contains all the source code
+- `src/core` - this module is for classes used by all modules, such as route guards, HTTP interceptors, and application level services (logging, error handlers),
+- `src/layout` - a container of components which are declared in the AppModule. The directory contains page-level components of content such as a common footer, navigation, and header.
+- `src/modules` - The modules directory contains a collection of modules which are each independent of each other.
+- `src/modules/consents` - contains all components, services and entities related to the consents feature 
+- `src/modules/consents/components` - contains all the presentation components for the consents feature
+- `src/modules/consents/data` - contains all the entities and services for the consents feature
+- `src/modules/consents/pages` - contains all the container components for the consents feature
+- `src/shared` - The shared module contains classes and resources which are used in more than one dynamically loaded module.
+- `src/environments` - contains different env config files
+- `src/index.html` - starting index.html file
 
 ## Development server
+1 - run the mock backend: `npm run run-server`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2 - then run the ng app (dev mode) `npm start`
 
 ## Running unit tests
+run `npm run test`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Unit tests executed using [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Run Linting
+run `npm run lint`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[codelyzer](http://codelyzer.com/) is used for linting
